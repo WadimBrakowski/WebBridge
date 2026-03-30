@@ -12,7 +12,7 @@ public class Tester : MonoBehaviour
         var bridgeObject = GameObject.Find(bridgeObjectName);
         if (bridgeObject == null)
         {
-            Debug.LogError($"Bridge object '{bridgeObjectName}' nicht gefunden.", this);
+            Debug.LogError($"Bridge object '{bridgeObjectName}' not found.", this);
             return;
         }
 
@@ -28,7 +28,7 @@ public class Tester : MonoBehaviour
         });
 
         bridgeObject.SendMessage("Publish", envelope, SendMessageOptions.RequireReceiver);
-        Debug.Log($"SendMessage an '{bridgeObjectName}.Publish' gesendet: {envelope}", this);
+        Debug.Log($"SendMessage to '{bridgeObjectName}.Publish' sent: {envelope}", this);
     }
 
     [System.Serializable]
