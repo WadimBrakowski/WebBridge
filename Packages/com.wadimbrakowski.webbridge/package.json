@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "displayName": "Web Bridge",
   "description": "Simple message bridge for Unity runtime components.",
+  "samples": [
+    {
+      "displayName": "Basic Bridge",
+      "description": "Minimal package sample scaffold.",
+      "path": "Samples/Basic Bridge"
+    }
+  ],
   "unity": "2022.3",
   "author": {
     "name": "Wadim Brakowski"
